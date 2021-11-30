@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,800;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Content here -->
+      <div class="header">
+        <img src="./images/logo.png" alt="" />
+      </div>
+      <div class="menu">
+        <nav class="navbar custome navbar-expand-sm navbar-light bg-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="banner">
+        <img src="./images/banner.png" class="img-fluid banner-pc" alt="">
+
+        <img src="./images/banner-sp.png" class="img-fluid banner-mb" alt="">
+        <button class="btn-buy">
+          Đặt ngay
+        </button>
+      </div>
+      <div class="about">
+        <div class="about__header">
+          <h2>
+            Chúng tôi là ai
+          </h2>
+        </div>
+        <div class="about__content">
+          <p>
+            TESOS là thương hiệu túi đeo ra đời với niềm đam mê công nghệ của
+            những nhà sáng lập. Chúng tôi đặt trải nghiệm người dùng là trung
+            tâm của mọi sự sáng tạo. Mỗi dòng sản phẩm có thiết kế tinh tế, tối
+            ưu khả năng bảo vệ những vật dụng điện tử hằng ngày của bạn
+          </p>
+          <p>
+            Với quy trình chọn lọc các nguyên vật liệu và ứng dụng kỹ thuật sản
+            xuất tiêu chuẩn quốc tế, TESOS hứa hẹn sẽ tạo ra các sản phẩm cao
+            cấp mang thương hiệu Việt và dành cho người Việt
+          </p>
+        </div>
+        <button class="btn-more" data-toggle="modal" data-target="#exampleModal">
+          Tìm hiểu thêm
+        </button>
+      </div>
+      <div class="about-video">
+        <div class="about__header about__header--black">
+          <h2>
+            Chúng tôi là ai
+          </h2>
+        </div>
+      </div>
+      <div class="video">
+        <img src="../Tesos/images/play.png" alt="" />
+      </div>
+      <div class="about-video">
+        <div class="about__header about__header--black">
+          <h2>
+            Có gì ở tesos
+          </h2>
+        </div>
+        <div class="infomation">
+          <img src="./images/i-1.png" alt="" />
+
+          <img src="./images/i-2.png" alt="" />
+
+          <img src="./images/i-3.png" alt="" />
+        </div>
+      </div>
+      <div class="tab">
+        <div class="about__header about__header--black">
+          <h2>
+            Chiến dịch pre-order
+          </h2>
+        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              id="home-tab"
+              data-toggle="tab"
+              href="#home"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active show"
+              id="profile-tab"
+              data-toggle="tab"
+              href="#profile"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+              >Profile</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="contact-tab"
+              data-toggle="tab"
+              href="#contact"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <div class="flex-card">
+              <div class="card-buy">
+                <div class="img">
+                  <img src="./images/i-1.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <div class="title">
+                    <h2>
+                      TESOS X: Túi đeo chéo công nghệ cao dành riêng cho Macbook
+                      13”
+                    </h2>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Tesos là sự kết hợp giữa một start-up kinh doanh thương mại
+                      điện tử và một start-up chuyên sản xuất balo với điểm...
+                    </p>
+                  </div>
+                  <div class="target">
+                    <h3>
+                      Mục tiêu:
+                      <span class="bold">
+                        100
+                      </span>
+                    </h3>
+                    <div class="progress">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h3>
+                      Số lượng đã đặt:
+                      <span class="bold">
+                        60
+                    </h3>
+                  </div>
+                  <div class="expected">
+                    <h3>
+                      Dự kiến ra mắt:
+                      <span class="bold">
+                        15/09/2021
+                      </span>
+                    </h3>
+                  </div>
+                  <div class="action">
+                    <button class="btn-mor">Xem thêm</button>
+                    <button class="btn-feedback">Phân phối</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-buy">
+                <div class="img">
+                  <img src="./images/i-1.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <div class="title">
+                    <h2>
+                      TESOS X: Túi đeo chéo công nghệ cao dành riêng cho Macbook
+                      13”
+                    </h2>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Tesos là sự kết hợp giữa một start-up kinh doanh thương mại
+                      điện tử và một start-up chuyên sản xuất balo với điểm...
+                    </p>
+                  </div>
+                  <div class="target">
+                    <h3>
+                      Mục tiêu:
+                      <span class="bold">
+                        100
+                      </span>
+                    </h3>
+                    <div class="progress">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h3>
+                      Số lượng đã đặt:
+                      <span class="bold">
+                        60
+                    </h3>
+                  </div>
+                  <div class="expected">
+                    <h3>
+                      Dự kiến ra mắt:
+                      <span class="bold">
+                        15/09/2021
+                      </span>
+                    </h3>
+                  </div>
+                  <div class="action">
+                    <button class="btn-mor">Xem thêm</button>
+                    <button class="btn-feedback">Phân phối</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-buy">
+                <div class="img">
+                  <img src="./images/i-1.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <div class="title">
+                    <h2>
+                      TESOS X: Túi đeo chéo công nghệ cao dành riêng cho Macbook
+                      13”
+                    </h2>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Tesos là sự kết hợp giữa một start-up kinh doanh thương mại
+                      điện tử và một start-up chuyên sản xuất balo với điểm...
+                    </p>
+                  </div>
+                  <div class="target">
+                    <h3>
+                      Mục tiêu:
+                      <span class="bold">
+                        100
+                      </span>
+                    </h3>
+                    <div class="progress">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h3>
+                      Số lượng đã đặt:
+                      <span class="bold">
+                        60
+                    </h3>
+                  </div>
+                  <div class="expected">
+                    <h3>
+                      Dự kiến ra mắt:
+                      <span class="bold">
+                        15/09/2021
+                      </span>
+                    </h3>
+                  </div>
+                  <div class="action">
+                    <button class="btn-mor">Xem thêm</button>
+                    <button class="btn-feedback">Phân phối</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+          
+          <div class="flex-card">
+            <div class="card-buy">
+              <div class="img">
+                <img src="./images/i-1.png" alt="" />
+              </div>
+              <div class="card-body">
+                <div class="title">
+                  <h2>
+                    TESOS X: Túi đeo chéo công nghệ cao dành riêng cho Macbook
+                    13”
+                  </h2>
+                </div>
+                <div class="content">
+                  <p>
+                    Tesos là sự kết hợp giữa một start-up kinh doanh thương mại
+                    điện tử và một start-up chuyên sản xuất balo với điểm...
+                  </p>
+                </div>
+                <div class="target">
+                  <h3>
+                    Mục tiêu:
+                    <span class="bold">
+                      100
+                    </span>
+                  </h3>
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h3>
+                    Số lượng đã đặt:
+                    <span class="bold">
+                      60
+                  </h3>
+                </div>
+                <div class="expected">
+                  <h3>
+                    Dự kiến ra mắt:
+                    <span class="bold">
+                      15/09/2021
+                    </span>
+                  </h3>
+                </div>
+                <div class="action">
+                  <button class="btn-mor">Xem thêm</button>
+                  <button class="btn-feedback">Phân phối</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-buy">
+              <div class="img">
+                <img src="./images/i-1.png" alt="" />
+              </div>
+              <div class="card-body">
+                <div class="title">
+                  <h2>
+                    TESOS X: Túi đeo chéo công nghệ cao dành riêng cho Macbook
+                    13”
+                  </h2>
+                </div>
+                <div class="content">
+                  <p>
+                    Tesos là sự kết hợp giữa một start-up kinh doanh thương mại
+                    điện tử và một start-up chuyên sản xuất balo với điểm...
+                  </p>
+                </div>
+                <div class="target">
+                  <h3>
+                    Mục tiêu:
+                    <span class="bold">
+                      100
+                    </span>
+                  </h3>
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h3>
+                    Số lượng đã đặt:
+                    <span class="bold">
+                      60
+                  </h3>
+                </div>
+                <div class="expected">
+                  <h3>
+                    Dự kiến ra mắt:
+                    <span class="bold">
+                      15/09/2021
+                    </span>
+                  </h3>
+                </div>
+                <div class="action">
+                  <button class="btn-mor">Xem thêm</button>
+                  <button class="btn-feedback">Phân phối</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-buy">
+              <div class="img">
+                <img src="./images/i-1.png" alt="" />
+              </div>
+              <div class="card-body">
+                <div class="title">
+                  <h2>
+                    TESOS X: Túi đeo chéo công nghệ cao dành riêng cho Macbook
+                    13”
+                  </h2>
+                </div>
+                <div class="content">
+                  <p>
+                    Tesos là sự kết hợp giữa một start-up kinh doanh thương mại
+                    điện tử và một start-up chuyên sản xuất balo với điểm...
+                  </p>
+                </div>
+                <div class="target">
+                  <h3>
+                    Mục tiêu:
+                    <span class="bold">
+                      100
+                    </span>
+                  </h3>
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h3>
+                    Số lượng đã đặt:
+                    <span class="bold">
+                      60
+                  </h3>
+                </div>
+                <div class="expected">
+                  <h3>
+                    Dự kiến ra mắt:
+                    <span class="bold">
+                      15/09/2021
+                    </span>
+                  </h3>
+                </div>
+                <div class="action">
+                  <button class="btn-mor">Xem thêm</button>
+                  <button class="btn-feedback">Phân phối</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="contact"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+          <div class="flex-card">
+            <div class="card-buy">
+              <div class="img">
+                <img src="./images/i-1.png" alt="" />
+              </div>
+              <div class="card-body">
+                <div class="title">
+                  <h2>
+                    TESOS X: Túi đeo chéo công nghệ cao dành riêng cho Macbook
+                    13”
+                  </h2>
+                </div>
+                <div class="content">
+                  <p>
+                    Tesos là sự kết hợp giữa một start-up kinh doanh thương mại
+                    điện tử và một start-up chuyên sản xuất balo với điểm...
+                  </p>
+                </div>
+                <div class="target">
+                  <h3>
+                    Mục tiêu:
+                    <span class="bold">
+                      100
+                    </span>
+                  </h3>
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h3>
+                    Số lượng đã đặt:
+                    <span class="bold">
+                      60
+                  </h3>
+                </div>
+                <div class="expected">
+                  <h3>
+                    Dự kiến ra mắt:
+                    <span class="bold">
+                      15/09/2021
+                    </span>
+                  </h3>
+                </div>
+                <div class="action">
+                  <button class="btn-mor">Xem thêm</button>
+                  <button class="btn-feedback">Phân phối</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-buy">
+              <div class="img">
+                <img src="./images/i-1.png" alt="" />
+              </div>
+              <div class="card-body">
+                <div class="title">
+                  <h2>
+                    TESOS X: Túi đeo chéo công nghệ cao dành riêng cho Macbook
+                    13”
+                  </h2>
+                </div>
+                <div class="content">
+                  <p>
+                    Tesos là sự kết hợp giữa một start-up kinh doanh thương mại
+                    điện tử và một start-up chuyên sản xuất balo với điểm...
+                  </p>
+                </div>
+                <div class="target">
+                  <h3>
+                    Mục tiêu:
+                    <span class="bold">
+                      100
+                    </span>
+                  </h3>
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h3>
+                    Số lượng đã đặt:
+                    <span class="bold">
+                      60
+                  </h3>
+                </div>
+                <div class="expected">
+                  <h3>
+                    Dự kiến ra mắt:
+                    <span class="bold">
+                      15/09/2021
+                    </span>
+                  </h3>
+                </div>
+                <div class="action">
+                  <button class="btn-mor">Xem thêm</button>
+                  <button class="btn-feedback">Phân phối</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-buy">
+              <div class="img">
+                <img src="./images/i-1.png" alt="" />
+              </div>
+              <div class="card-body">
+                <div class="title">
+                  <h2>
+                    TESOS X: Túi đeo chéo công nghệ cao dành riêng cho Macbook
+                    13”
+                  </h2>
+                </div>
+                <div class="content">
+                  <p>
+                    Tesos là sự kết hợp giữa một start-up kinh doanh thương mại
+                    điện tử và một start-up chuyên sản xuất balo với điểm...
+                  </p>
+                </div>
+                <div class="target">
+                  <h3>
+                    Mục tiêu:
+                    <span class="bold">
+                      100
+                    </span>
+                  </h3>
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h3>
+                    Số lượng đã đặt:
+                    <span class="bold">
+                      60
+                  </h3>
+                </div>
+                <div class="expected">
+                  <h3>
+                    Dự kiến ra mắt:
+                    <span class="bold">
+                      15/09/2021
+                    </span>
+                  </h3>
+                </div>
+                <div class="action">
+                  <button class="btn-mor">Xem thêm</button>
+                  <button class="btn-feedback">Phân phối</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      </div>
+      <div class="about__header about__header--black">
+        <h2>
+          Khách hàng nói gì về tesos
+        </h2>
+      </div>
+      <div class="feedback">
+        <div class="card-feedback">
+          <img src="./images/note.png" class="note" alt="">
+          <div class="card-feedback-img">
+              <img src="./images/Ellipse 6.png" alt="">
+          </div>
+          <div class="card-feedback-title">
+            <h2>Tên khách hàng</h2>
+          </div>
+          <div class="card-feedback-rate">
+            <img src="./images/star.png" alt="">
+            <img src="./images/star.png" alt="">
+            <img src="./images/star.png" alt="">
+            <img src="./images/star.png" alt="">
+            <img src="./images/star.png" alt="">
+          </div>
+          <div class="card-feedback-content">
+            <p>
+              Thích chất liệu của sản phẩm Cần bổ sung thêm nhiều mẫu
+            </p>
+          </div>
+        </div>
+        <div class="card-feedback">
+          <img src="./images/note.png" class="note" alt="">
+          <div class="card-feedback-img">
+              <img src="./images/Ellipse 6.png" alt="">
+          </div>
+          <div class="card-feedback-title">
+            <h2>Tên khách hàng</h2>
+          </div>
+          <div class="card-feedback-rate">
+            <img src="./images/star.png" alt="">
+            <img src="./images/star.png" alt="">
+            <img src="./images/star.png" alt="">
+            <img src="./images/star.png" alt="">
+            <img src="./images/star.png" alt="">
+          </div>
+          <div class="card-feedback-content">
+            <p>
+              Thích chất liệu của sản phẩm Cần bổ sung thêm nhiều mẫu
+            </p>
+          </div>
+        </div>
+        <div class="card-feedback">
+          <img src="./images/note.png" class="note" alt="">
+          <div class="card-feedback-img">
+              <img src="./images/Ellipse 6.png" alt="">
+          </div>
+          <div class="card-feedback-title">
+            <h2>Tên khách hàng</h2>
+          </div>
+          <div class="card-feedback-rate">
+            <img src="./images/star.png" alt="">
+            <img src="./images/star.png" alt="">
+            <img src="./images/star.png" alt="">
+            <img src="./images/star.png" alt="">
+            <img src="./images/star.png" alt="">
+          </div>
+          <div class="card-feedback-content">
+            <p>
+              Thích chất liệu của sản phẩm Cần bổ sung thêm nhiều mẫu
+            </p>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    <div class="contact">
+      <div class="about__header">
+        <h2>
+          Đồng hành cùng chúng tôi
+        </h2>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Họ tên" name="" id="">
+        <input type="text" placeholder="Email" name="" id="">
+        <input type="text" placeholder="Số điện thoại" name="" id="">
+        <input type="text" placeholder="Doanh nghiệp" name="" id="">
+        <input type="text" placeholder="Sản phẩm quan tâm" name="" id="">
+      </div>
+      <div class="contact-content">
+        <p>TESOS sẽ luôn tôn trọng thông tin riêng tư của bạn. Bằng việc nhấn gửi, chúng tôi sẽ bảo vệ toàn bộ dữ liệu theo Điều lệ</p>
+      </div>
+      <div class="send">
+        <button class="send-info">
+          Gửi thông tin
+        </button>
+      </div>
+    </div>
+    <div class="introduction">
+      
+     <div class="introduction-flex">
+      <img src="./images/lg-f (2).png" alt="">
+      <div class="introduction-flex-row">
+        <div class="introduction-left">
+          <p>
+            Tesos là sự kết hợp giữa một start-up kinh doanh thương mại điện tử và một start-up chuyên sản xuất balo với điểm chung lớn nhất là niềm hứng thú bất tận đối với những sản phẩm công nghệ. Bằng việc không ngừng sáng tạo, không ngừng hoàn thiện để tạo ra những sản phẩm chỉnh chu và chất lượng, Tesos đã và đang hướng đến mục tiêu là sản phẩm thương hiệu Việt Nam mang tiêu chuẩn quốc tế.
+          </p>
+          </div>
+          <div class="footer footer-pc">
+            <div class="address">
+                <img src="./images/1.svg" alt="">
+                <h4>
+                  26 Đường C12, Phường 13, Tân Bình, TP.HCM
+                </h4>
+            </div>
+            <div class="phone">
+              <img src="./images/2.svg" alt="">
+              <h4>
+                0938.228.865
+              </h4>
+            </div>
+            <div class="mail">
+              <img src="./images/3.svg" alt="">
+              <h4>
+                support@vaithuhay.com
+              </h4>
+            </div>
+          </div>
+      </div>
+    </div>
+     </div>
+    <div class="footer">
+      <div class="footer-rp">
+        <div class="address">
+          <img src="./images/1.svg" alt="">
+          <h4>
+            26 Đường C12, Phường 13, Tân Bình, TP.HCM
+          </h4>
+      </div>
+      <div class="phone">
+        <img src="./images/2.svg" alt="">
+        <h4>
+          0938.228.865
+        </h4>
+      </div>
+      <div class="mail">
+        <img src="./images/3.svg" alt="">
+        <h4>
+          support@vaithuhay.com
+        </h4>
+      </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+           
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> -->
+          <div class="modal-body">
+            <div class="btn-close" data-dismiss="modal" aria-label="Close">X</div>
+            <div class="modal-logo">
+              <img src="./images/logo.png" alt="">
+            </div>
+            <div class="modal-title">
+              Tự hào sản phẩm sản xuất tại Việt Nam mang chất lượng quốc tế
+            </div>
+            <div class="modal-content">
+              <p>
+                TESOS là sự kết hợp đầy tâm huyết giữa một start-up kinh doanh thương mại điện tử và một start-up chuyên sản xuất balo với điểm chung lớn nhất là niềm hứng thú bất tận đối với những sản phẩm công nghệ
+              </p>
+              <p>
+                Những nhà sáng lập của chúng tôi trăn trở mỗi ngày vì sao Việt Nam hoàn toàn có thể sản tạo ra những sản phẩm cho chính người Việt của mình với chất lượng và đạt chuẩn quốc tế nhưng các sản phẩm túi đeo, balo hằng ngày mà mọi người đang dùng đều là nhập khẩu lại từ các thương hiệu nước ngoài khác. Từ mong muốn tạo ra sản phẩm chất lượng với giá thành phù hợp cho người dùng mà TESOS ra đời.
+              </p>
+              <p>
+                TESOS là tình yêu tuyệt đối mà chúng tôi dành cho mình, cho những ai có cùng đam mê, muốn bảo vệ và nâng niu từng món đồ công nghệ. Chúng tôi đặt khách hàng là trung tâm của mọi sự sáng tạo. Chúng tôi vẫn đang không ngừng sáng tạo, không ngừng hoàn thiện từng ngày để tạo nên những sản phẩm chỉn chu, xứng đáng với nhiệt huyết của chính mình và các anh em HAYER, cũng như cộng đồng sử dụng thiết bị công nghệ. Vì lẽ đó, tiêu chuẩn quốc tế là tiêu chuẩn mà TESOS luôn đảm bảo trong quá trình sản xuất và phát triển sản phẩm. TESOS chọn tập trung đầu tư nhiều hơn vào việc nghiên cứu, phát triển sản phẩm để giải quyết các bài toán về thiết kế và công năng như: chống nước, chống sốc, tiện dụng, độ bền… đặc biệt là giá thành phải chăng. Chúng tôi chọn lọc rất kỹ về mặt chất liệu từ vải, chỉ cho đến khóa kéo kết hợp, những kỹ thuật may hàng đầu cùng công nghệ chống sốc 2 chiều độc quyền. Hiện tại TESOS có nhà máy chuyên nghiệp đặt tại Việt Nam giúp tối ưu công suất sản xuất bằng công nghệ hiện đại, giảm thiểu các chi phí vận chuyển, nhập khẩu...
+              </p>
+              <p>
+                Bên cạnh đó, thông qua cộng đồng Vaithuhay, TESOS sẽ đến tay trực tiếp người tiêu dùng, tiết kiệm chi phí phân phối trung gian. Các vấn đề, khó khăn mà người dùng gặp phải cũng là điều mà chúng tôi đã và đang trải qua từ dây đeo, thời tiết, mẫu mã. Việt Nam vốn là khí hậu nhiệt đới gió mùa với những cơn mưa bất chợt, vì lẽ đó để tăng khả năng chống nước lên đến trên 90% chúng tôi chọn lọc rất kỹ về mặt chất liệu từ vải, chỉ cho đến khóa kéo kết hợp với những kỹ thuật may hàng đầu. Mỗi sản phẩm đều tỉ mỉ đến từng chi tiết nhỏ, từng đường kim mũi chỉ để tạo nên một tổng thể hoàn thiện với thiết kế hàng đầu, độ bền cao, mẫu mã thời thượng và tiện dụng. Để đảm bảo được điều đó, chúng tôi có quy trình sản xuất và kiểm định nghiêm ngặt, tất cả đều được lập trình chuyên sâu, cắt 100% bằng laser, in khắc công nghệ cao. TESOS có nhà máy chuyên nghiệp đặt tại Việt Nam giúp tối ưu công suất sản xuất bằng công nghệ hiện đại, giảm thiểu các chi phí logistics, nhập khẩu. Từ đó giúp tạo lợi thế về giá bán thấp hơn từ 10 - 20% so với các sản phẩm nhập khẩu tương tự.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>
