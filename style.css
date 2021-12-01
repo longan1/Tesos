@@ -61,7 +61,11 @@ body {
   background-repeat: no-repeat;
   padding: 57px 27px;
 }
+.about__header__first{
+  max-width: 686px;
+}
 .about__header {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,15 +75,18 @@ body {
 .about__header h2 {
   color: #ffffff;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 35px;
+  line-height: 42.67px;
   text-align: center;
 }
 .about__content {
-  margin-top: 20px;
+  max-width: 1193px;
+  margin: 20px auto;
   width: 100%;
-  text-align: left;
+  text-align: justify;
   color: #ffffff;
+  font-size: 25px;
+  line-height: 54.47px;
 }
 .about__header--black {
   max-width: 686px;
@@ -446,10 +453,13 @@ h4 {
   flex-direction: column;
 }
 .modal-content {
+  max-width: 1030px;
+  margin: 29px auto 13px;
   font-weight: normal;
-  font-size: 11px;
-  line-height: 172.9%;
+  font-size: 17px;
+  line-height: 35.51px;
   color: #ffffff;
+  text-align: justify;
 }
 .custome .nav-link {
   background: unset;
@@ -587,6 +597,7 @@ h4 {
   }
   .modal-title {
     font-size: 30px;
+    line-height: 45.72px;
   }
   .modal-content p {
     font-size: 17px;
@@ -617,7 +628,7 @@ h4 {
     display: flex;
   }
   .introduction-left {
-    max-width: 510px;
+    max-width: 793px;
   }
 
   .btn-buy {
