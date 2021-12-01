@@ -118,6 +118,9 @@ body {
   height: 500px;
   left: 35px;
 }
+.video img{
+  cursor: pointer !important;
+}
 .infomation img {
   width: 100%;
 }
@@ -206,21 +209,29 @@ body {
   gap: 20px;
 }
 .btn-mor {
+  cursor: pointer;
   border: none;
   width: 135px;
   height: 38px;
   color: #ffffff;
 
   background: #dc0000;
+  opacity: 0.5;
 }
-
+.btn-mor:hover{
+  opacity: 1;
+}
 .btn-feedback {
+  cursor: pointer;
   border: none;
   width: 135px;
   height: 38px;
   color: #ffffff;
-
+  opacity: 0.6;
   background: #565656;
+}
+.btn-feedback:hover{
+  opacity: 1;
 }
 .feedback {
   margin-top: 20px;
@@ -292,9 +303,12 @@ input {
   color: white;
   width: 100%;
 }
-input:last-child {
-  margin-bottom: 20px;
+.flex-input{
+  /* margin-bottom: 50px; */
 }
+/* input:last-child {
+  margin-bottom: 20px;
+} */
 textarea:focus,
 input:focus {
   outline: none;
@@ -332,6 +346,11 @@ input:focus {
   line-height: 106.4%;
 
   color: #ffffff;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.send-info:hover{
+  opacity: 1;
 }
 .introduction {
   padding: 28px 37px;
@@ -392,6 +411,8 @@ h4 {
   float: right;
   border-radius: 50%;
   border: 1px solid white;
+  margin-top: 20px;
+  
 }
 .footer-pc {
   display: none;
@@ -456,6 +477,11 @@ h4 {
   }
 }
 @media only screen and (min-width: 768px) {
+  .flex-input{
+    display: flex;
+    gap: 20px;
+  }
+
   .footer-pc {
     display: flex;
     height: 216px !important;
@@ -472,6 +498,12 @@ h4 {
   }
   .contact {
     max-width: 1440px;
+    margin: 0 auto;
+    
+  }
+  .contact-pc{
+    max-width: 864px;
+    width: 100%;
     margin: 0 auto;
   }
   .footer {
@@ -506,7 +538,7 @@ h4 {
     font-size: 17px;
   }
   .modal-body {
-    padding: 0 89px;
+    padding: 0 30px;
   }
   .introduction {
     display: flex;
