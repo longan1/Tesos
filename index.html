@@ -46,8 +46,11 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#"
-                  >Trang chủ <span class="sr-only">(current)</span></a
+                  >Home <span class="sr-only">(current)</span></a
                 >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -59,34 +62,11 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Về TESOS
+                  Dropdown
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">Trang chủ</a>
                   <a class="dropdown-item" href="#">Về TESOS</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Sản phẩm</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Chiến dịch Pre-order</a>
-                  <a class="dropdown-item" href="#">Liên hệ</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Sản phẩm
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Trang chủ</a>
-                  <a class="dropdown-item" href="#">Về TESOS</a>
-                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Sản phẩm</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Chiến dịch Pre-order</a>
@@ -94,10 +74,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Chiến dịch Pre-order</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Liên hệ</a>
+                <a class="nav-link disabled" href="#">Disabled</a>
               </li>
             </ul>
           </div>
@@ -730,26 +707,32 @@
      
     </div>
     <div class="contact">
-      <div class="about__header">
-        <h2>
-          ĐỒNG HÀNH CÙNG CHÚNG TÔI
-        </h2>
-      </div>
-      <div class="form">
-        <input type="text" placeholder="Họ tên" name="" id="">
-        <input type="text" placeholder="Email (*)" name="" id="">
-        <input type="text" placeholder="Số điện thoại (*)" name="" id="">
-        <input type="text" placeholder="Doanh nghiệp" name="" id="">
-        <input type="text" placeholder="Sản phẩm quan tâm" name="" id="">
-      </div>
-      <div class="contact-content">
-        <p>TESOS sẽ luôn tôn trọng thông tin riêng tư của bạn. Bằng việc nhấn gửi, chúng tôi sẽ bảo vệ toàn bộ dữ liệu theo Điều lệ</p>
-      </div>
-      <div class="send">
-        <button class="send-info">
-          Gửi thông tin
-        </button>
-      </div>
+        <div class="contact-pc">
+          <div class="about__header">
+            <h2>
+              ĐỒNG HÀNH CÙNG CHÚNG TÔI
+            </h2>
+          </div>
+          <div class="form">
+            <div class="flex-input">
+              <input type="text" placeholder="Họ tên" name="" id="">
+            <input type="text" placeholder="Email" name="" id="">
+            </div>
+            <div class="flex-input">
+              <input type="text" placeholder="Số điện thoại" name="" id="">
+            <input type="text" placeholder="Doanh nghiệp" name="" id="">
+            </div>
+            <input type="text" placeholder="Sản phẩm quan tâm" name="" id="">
+          </div>
+          <div class="contact-content">
+            <p>TESOS sẽ luôn tôn trọng thông tin riêng tư của bạn. Bằng việc nhấn gửi, chúng tôi sẽ bảo vệ toàn bộ dữ liệu theo Điều lệ</p>
+          </div>
+          <div class="send">
+            <button class="send-info">
+              Gửi thông tin
+            </button>
+          </div>
+        </div>
     </div>
     <div class="introduction">
       
