@@ -87,6 +87,10 @@ body {
   margin: 0 auto;
   border-bottom: 5px solid black;
 }
+.about__header--first{
+  max-width: 686px;
+  margin: 0 auto;
+}
 .about__header--black h2 {
   margin-top: 20px;
   color: black !important;
@@ -450,6 +454,7 @@ h4 {
   font-size: 11px;
   line-height: 172.9%;
   color: #ffffff;
+  text-align: justify;
 }
 .custome .nav-link {
   background: unset;
@@ -495,6 +500,7 @@ h4 {
   }
   .about__content{
     font-size: 25px;
+    text-align: justify;
   }
   .video{
     max-width: 1040px;
@@ -596,6 +602,8 @@ h4 {
   }
   .modal-content p {
     font-size: 17px;
+    line-height: 35.51px;
+    text-align: justify;
   }
   .modal-body {
     padding: 0 30px;
