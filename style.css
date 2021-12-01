@@ -350,7 +350,7 @@ input:focus {
   font-weight: normal;
   font-size: 20px;
   line-height: 106.4%;
-  margin-top: 41px;
+ 
   color: #ffffff;
   cursor: pointer;
   opacity: 0.6;
@@ -489,6 +489,9 @@ h4 {
   .flex-input{
     display: flex;
     gap: 20px;
+  }
+  .send-info{
+    margin-top: 41px;
   }
   .video{
     max-width: 1040px;
