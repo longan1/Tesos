@@ -140,7 +140,7 @@ body {
 .nav-link {
   transition: all 0.1s;
   border-radius: unset !important;
-  padding: 10px 27px;
+  padding: 10px  13px;
   background: #d8d8d8;
   color: #aaaaaa;
   font-weight: 600;
@@ -417,6 +417,9 @@ h4 {
   margin-top: 20px;
   
 }
+.infomation{
+  margin-bottom: 20px;
+}
 .footer-pc {
   display: none;
 }
@@ -494,6 +497,7 @@ h4 {
   .infomation {
     display: flex;
     margin-bottom: 20px;
+    margin-top: 20px;
     gap: 20px;
   }
   .infomation img {
